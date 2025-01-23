@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    text-decoration: none;
+    color: black;
+    font-family: Raleway;
+}
+
+body {
+    background-color: #fafafa;
+}
+h1{
+    font-size: 1.5rem;
+}
+
+.head {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    
+}
+.nav{
+    color: black;
+    margin-right: 50px;
+    
+}
+li{
+    list-style-type: none;
+}
+ul{ 
+    display: flex;
+    text-align: right;
+}
+.logo{
+    margin-top: 20px;
+    max-width: 150px;
+}
+.nav:hover{
+    border-top: solid 3px #0065fc;
+    color: #0065FC;
+}
+
+.hotel{
+    display: flex;
+    justify-content: space-around;
+    flex: 1 0;
+    gap: 40px;
+}
+.heb{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+.heb-a > a{
+    height: 12rem;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    line-height: 6px;
+}
+.heb-a{
+    width: 30%;
+    min-width: 15rem;
+}
+.img{
+
+    height: 55%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.hebcontent{
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    padding: 20px;
+}
+.btn{
+    display: flex;
+    gap: 1rem;
+    font-weight: bold;
+}
+.filter{
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.tst{
+    flex: 2;
+}
+.tst2{
+    flex: 1;
+}
+.pop > a{
+    flex-direction: row;
+    height: 8rem;
+}
+.pop{
+    width: 100%;
+
+}
+.ipop{
+    width: 30%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    margin-right: 10px;
+}
+.acti {
+    display: flex;
+    gap: 25px;
+}
+.acti > a{
+    width: 25%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.096) 2px 2px 2px 2px;
+}
+.acti > a >img {
+    object-fit: cover;
+    height: 25rem;
+    width: 100%;
+    border-radius: 20px 20px 0 0 ;
+}
+.acti > a >h3{
+    padding-left: 15px;
+}
+.ac{
+    margin: 30px;
+}
