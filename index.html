@@ -6,6 +6,8 @@
     <title>Booki</title>
     <link rel="icon" href="Images/logo/Booki.png" type="image">
     <link rel="stylesheet" href="CSS/style.css">
+     <!-- L'utilisation du js se fait uniquement pour pouvoir utiliser les icons de fontawesome -->
+    <script src="https://kit.fontawesome.com/a0314b6648.js" crossorigin="anonymous"></script> 
 </head>
 <body>
 
@@ -29,366 +31,231 @@
 
     <main>
 
-        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
+        <section>
+
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+
+        </section>
+
+        <section class="search-container">
+        
+            <div class="search">
+                <div class="search-always">
+                    <h3 class="search-icon"><i class="fa-solid fa-location-dot"></i></h3>
+                    <h3 class="txt">Marseille, France</h3>
+                </div>
+                <h3 class="blue">Rechercher</h3>
+        
+                <h3 class="search-icon blue mobile"><i class="fa-solid fa-magnifying-glass blue mobile"></i></h3>
+            </div>
+        
+        </section>
 
         <section>
 
-            <div>
-
-            </div>
             <div class="btn">
                 <h3>Filtres</h3>
-                <a href="#" class="filter">Économique</a>
-                <a href="#" class="filter">Familial</a>
-                <a href="#" class="filter">Romantique</a>
-                <a href="#" class="filter">Nos pépites</a>
+                <div>
+                    <a href="#" class="filter"><i class="fa-solid filter-ico fa-money-bill-wave"></i>Économique</a>
+                    <a href="#" class="filter"><i class="fa-solid filter-ico fa-person"></i>Familial</a>
+                    <a href="#" class="filter"><i class="fa-solid filter-ico fa-heart"></i>Romantique</a>
+                    <a href="#" class="filter"><i class="fa-solid filter-ico fa-fire"></i>Nos pépites</a>
+                </div>
             </div>
 
         </section>
         
         <section class="hotel" id="Heb">
-            <div class="hebcontent tst">
+
+            <div class="hebcontent heb-heb">
                 <h2>Hébergement à Marseille</h2>
                 <div class="heb">
-                
+        
                     <article class="heb-a">
-                        <a href="#" >
-                            <img src="Images/hebergements/annie-spratt.jpg"class="img">
-                            <div>   
-                                <h3>Hôtel de la mer</h3>
-                                <p>Nuit à partir de 46€</p>
-                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 1280.000000 1181.000000"
-                                preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                            -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                            -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                            -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                            -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                            1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                            -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                            -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                            750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                            -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                            -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
-                                viewBox="0 0 1280.000000 1181.000000" preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                                                       -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                                                       -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                                                       -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                                                       -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                                                       1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                                                       -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                                                       -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                                                       750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                                                       -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                                                       -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 1280.000000 1181.000000"
-                                preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                            -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                            -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                            -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                            -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                            1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                            -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                            -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                            750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                            -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                            -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 1280.000000 1181.000000"
-                                preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                            -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                            -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                            -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                            -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                            1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                            -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                            -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                            750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                            -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                            -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
-                                viewBox="0 0 1280.000000 1181.000000" preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                                                       -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                                                       -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                                                       -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                                                       -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                                                       1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                                                       -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                                                       -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                                                       750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                                                       -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                                                       -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            </div> 
+                        <a href="#">
+                            <img src="Images/hebergements/fred-kleber.jpg" class="img">
+                            <div>
+                                <h3>Hôtel du Port</h3>
+                                <p>Nuit à partir de 52€</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star blank"></i>
+                            </div>
                         </a>
                     </article>
-                    <article class="heb-a"><a href="#"><img src="Images/hebergements/aw-creative.jpg" class="img">
-                        <div>
-                            <h3>Hôtel de la mer</h3>
-                            <p>Nuit à partir de 46€</p>
-                            
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 1280.000000 1181.000000"
-                                preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                            -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                            -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                            -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                            -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                            1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                            -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                            -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                            750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                            -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                            -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
-                                viewBox="0 0 1280.000000 1181.000000" preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                                                       -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                                                       -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                                                       -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                                                       -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                                                       1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                                                       -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                                                       -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                                                       750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                                                       -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                                                       -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 1280.000000 1181.000000"
-                                preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                            -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                            -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                            -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                            -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                            1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                            -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                            -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                            750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                            -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                            -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 1280.000000 1181.000000"
-                                preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                            -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                            -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                            -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                            -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                            1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                            -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                            -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                            750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                            -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                            -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
-                                viewBox="0 0 1280.000000 1181.000000" preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                                                       -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                                                       -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                                                       -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                                                       -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                                                       1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                                                       -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                                                       -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                                                       750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                                                       -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                                                       -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                        </div>
-                        <img src="" alt=""></a></article>
-                    <article class="heb-a"><a href="#"></a></article>
-                    <article class="heb-a"><a href="#"></a></article>
-                    <article class="heb-a"><a href="#"></a></article>
-                    <article class="heb-a"><a href="#"></a></article>
-                    
+                    <article class="heb-a">
+                        <a href="#">
+                            <img src="Images/hebergements/febrian-zakaria.jpg" class="img">
+                            <div>
+                                <h3>Hôtel Chez Amina</h3>
+                                <p>Nuit à partir de 96€</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star blank"></i>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="heb-a">
+                        <a href="#">
+                            <img src="Images/hebergements/reisetopia.jpg" class="img">
+                            <div>
+                                <h3>Hôtel Les mouettes</h3>
+                                <p>Nuit à partir de 76€</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star blank"></i>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="heb-a">
+                        <a href="#"> <img src="Images/hebergements/annie-spratt.jpg" class="img">
+                            <div>
+                                <h3>Hôtel de la mer</h3>
+                                <p>Nuit à partir de 46€</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star blank"></i>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="heb-a">
+                        <a href="#"> <img src="Images/hebergements/marcus-loke.jpg" class="img">
+                            <div>
+                                <h3>Auberge La Canebière</h3>
+                                <p>Nuit à partir de 25€</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star blank"></i>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="heb-a">
+                        <a href="#"> <img src="Images/hebergements/nicate-lee.jpg" class="img">
+                            <div>
+                                <h3>Auberge Le Panier</h3>
+                                <p>Nuit à partir de 23€</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star blank"></i>
+                            </div>
+                        </a>
+                    </article>
                 </div>
-                <h3>Afficher plus</h3>
+                <h3 class="heb-h">Afficher plus</h3>
             </div>
-            <div class="hebcontent tst2">
+            <div class="hebcontent heb-pop">
                 <h2>Les plus populaires</h2>
                 <div class="heb">
                     <article class="heb-a pop">
-                        <a href="#" >
-                            <img src="Images/hebergements/aw-creative.jpg"class="img ipop">
-                            <div>   
-                                <h3>Hôtel de la mer</h3>
-                                <p>Nuit à partir de 46€</p>
-                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 1280.000000 1181.000000"
-                                preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                            -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                            -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                            -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                            -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                            1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                            -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                            -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                            750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                            -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                            -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
-                                viewBox="0 0 1280.000000 1181.000000" preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                                                       -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                                                       -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                                                       -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                                                       -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                                                       1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                                                       -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                                                       -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                                                       750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                                                       -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                                                       -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 1280.000000 1181.000000"
-                                preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                            -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                            -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                            -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                            -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                            1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                            -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                            -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                            750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                            -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                            -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 1280.000000 1181.000000"
-                                preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                            -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                            -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                            -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                            -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                            1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                            -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                            -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                            750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                            -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                            -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
-                                viewBox="0 0 1280.000000 1181.000000" preserveAspectRatio="xMidYMid meet">
-                                <metadata>
-                                </metadata>
-                                <g transform="translate(0.000000,1181.000000) scale(0.100000,-0.100000)" fill="#0065fc" stroke="none">
-                                    <path d="M6327 11292 c-60 -180 -161 -489 -227 -687 -65 -198 -233 -709 -373
-                                                       -1135 -141 -426 -367 -1114 -503 -1527 l-248 -753 -2358 0 c-1297 0 -2358 -3
-                                                       -2358 -7 0 -5 170 -130 378 -279 207 -149 1057 -758 1887 -1353 831 -596 1518
-                                                       -1091 1528 -1100 20 -19 55 94 -420 -1346 -187 -570 -344 -1047 -628 -1910
-                                                       -141 -429 -286 -869 -322 -978 -36 -109 -63 -201 -60 -204 7 -6 -236 -180
-                                                       1912 1362 1012 726 1855 1331 1872 1343 l33 23 762 -548 c2447 -1758 3053
-                                                       -2191 3056 -2188 2 2 -46 153 -106 337 -61 183 -216 655 -346 1048 -511 1556
-                                                       -712 2168 -811 2470 -145 440 -185 563 -185 575 0 6 855 623 1900 1373 1045
-                                                       750 1900 1368 1900 1373 0 5 -909 10 -2357 11 l-2356 3 -164 500 c-90 275
-                                                       -272 826 -403 1225 -131 399 -383 1166 -560 1705 -177 539 -325 983 -329 987
-                                                       -4 5 -55 -139 -114 -320z" />
-                                </g>
-                            </svg>
-                            </div> 
+                        <a href="#">
+                            <img src="Images/hebergements/emile-guillemot.jpg" class="img ipop">
+                            <div>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de 25€</p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star blank"></i>
+                                </div>
+                            </div>
                         </a>
                     </article>
-                    
+                    <article class="heb-a pop">
+                        <a href="#">
+                            <img src="Images/hebergements/aw-creative.jpg" class="img ipop">
+                            <div>
+                                <h3>Chambres d’hôtes Au cœur de l’eau</h3>
+                                <p>Nuit à partir de 71€</p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star blank"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="heb-a pop">
+                        <a href="#">
+                            <img src="Images/hebergements/febrian-zakaria2.jpg" class="img ipop">
+                            <div>
+                                <h3>Hôtel Bleu et Blanc</h3>
+                                <p>Nuit à partir de 68€</p>
+                                <div class="star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star blank"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+        
                 </div>
-            </div> 
+            </div>
+
         </section>
+
         <section id="act" class="ac">
             <h2>Activités à Marseille</h2>
             <div class="acti">
-                <a>
+                <a href="#">
                     <img src="Images/activites/florian-wehde.jpg" alt="">
                     <h3>Notre-Dame-de-la-Garde</h3>
                 </a>
-                <a>
+                <a href="#">
                     <img src="Images/activites/florian-wehde.jpg" alt="">
                     <h3>Notre-Dame-de-la-Garde</h3>
                 </a>
-                <a>
+                <a href="#">
                     <img src="Images/activites/florian-wehde.jpg" alt="">
                     <h3>Notre-Dame-de-la-Garde</h3>
                 </a>
-                <a>
+                <a href="#">
                     <img src="Images/activites/florian-wehde.jpg" alt="">
                     <h3>Notre-Dame-de-la-Garde</h3>
                 </a>
             </div>
+
         </section>
 
 
     </main>
     
     <footer>
-
+        <div>
+            <h3>À propos</h3>
+            <p>Fonctionnement du site</p>
+            <p>Conditions générales</p>
+            <p>Données et confidentialité</p>
+        </div>
+        <div>
+            <h3>Nos hébergements</h3>
+            <p>Charte qualité</p>
+            <p>Proposer un hôtel</p>
+        </div>
+        <div>
+            <h3>Assistance</h3>
+            <p>Centre d'aide</p>
+            <p>Nous contacter</p>
+        </div>
     </footer>
 </body>
 </html>
