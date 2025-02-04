@@ -30,42 +30,47 @@
     </header>
 
     <main>
-
-        <section>
-
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-
-        </section>
-
-        <section class="search-container">
+        <div class="mobile-space">
+            <section>
         
-            <div class="search">
-                <div class="search-always">
-                    <h3 class="search-icon"><i class="fa-solid fa-location-dot"></i></h3>
-                    <h3 class="txt">Marseille, France</h3>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+        
+            </section>
+        
+            <section class="search-container">
+                <form action="" method="get">
+                    <button class="location"><i class="fa-solid fa-location-dot"></i></button>
+                    <input type="text" name="city" placeholder="Marseille, France" class="mobile100">
+                    <input type="submit" value="Rechercher" class="submit">
+                    <button type="submit" class="submit mobile"><i class="fa-solid fa-magnifying-glass mobile"></i></button>
+                </form>
+                <!-- <div class="search">
+                    <div class="search-always">
+                        <h3 class="search-icon"><i class="fa-solid fa-location-dot"></i></h3>
+                        <h3 class="txt">Marseille, France</h3>
+                    </div>
+                    <h3 class="blue">Rechercher</h3>
+        
+                    <h3 class="search-icon blue mobile"><i class="fa-solid fa-magnifying-glass blue mobile"></i></h3>
+                </div> -->
+        
+            </section>
+        
+            <section class="start-end">
+        
+                <div class="btn">
+                    <h3>Filtres</h3>
+                    <div>
+                        <a href="#" class="filter"><i class="fa-solid filter-ico fa-money-bill-wave"></i>Économique</a>
+                        <a href="#" class="filter"><i class="fa-solid filter-ico fa-person"></i>Familial</a>
+                        <a href="#" class="filter"><i class="fa-solid filter-ico fa-heart"></i>Romantique</a>
+                        <a href="#" class="filter"><i class="fa-solid filter-ico fa-fire"></i>Nos pépites</a>
+                    </div>
                 </div>
-                <h3 class="blue">Rechercher</h3>
-        
-                <h3 class="search-icon blue mobile"><i class="fa-solid fa-magnifying-glass blue mobile"></i></h3>
-            </div>
-        
-        </section>
-
-        <section>
-
-            <div class="btn">
-                <h3>Filtres</h3>
-                <div>
-                    <a href="#" class="filter"><i class="fa-solid filter-ico fa-money-bill-wave"></i>Économique</a>
-                    <a href="#" class="filter"><i class="fa-solid filter-ico fa-person"></i>Familial</a>
-                    <a href="#" class="filter"><i class="fa-solid filter-ico fa-heart"></i>Romantique</a>
-                    <a href="#" class="filter"><i class="fa-solid filter-ico fa-fire"></i>Nos pépites</a>
-                </div>
-            </div>
-
-        </section>
-        
+                <p><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            </section>
+        </div>
         <section class="hotel" id="Heb">
 
             <div class="hebcontent heb-heb">
@@ -157,7 +162,10 @@
                 <h3 class="heb-h">Afficher plus</h3>
             </div>
             <div class="hebcontent heb-pop">
-                <h2>Les plus populaires</h2>
+                <div class="flex">
+                    <h2>Les plus populaires</h2>
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
                 <div class="heb">
                     <article class="heb-a pop">
                         <a href="#">
@@ -217,16 +225,16 @@
             <h2>Activités à Marseille</h2>
             <div class="acti">
                 <a href="#">
-                    <img src="Images/activites/florian-wehde.jpg" alt="">
-                    <h3>Notre-Dame-de-la-Garde</h3>
+                    <img src="Images/activites/reno-laithienne.jpg" alt="">
+                    <h3>Vieux-Port</h3>
                 </a>
                 <a href="#">
-                    <img src="Images/activites/florian-wehde.jpg" alt="">
-                    <h3>Notre-Dame-de-la-Garde</h3>
+                    <img src="Images/activites/paul-hermann.jpg" alt="">
+                    <h3>Fort de Pomègues</h3>
                 </a>
                 <a href="#">
-                    <img src="Images/activites/florian-wehde.jpg" alt="">
-                    <h3>Notre-Dame-de-la-Garde</h3>
+                    <img src="Images/activites/kilyan-sockalingum.jpg" alt="">
+                    <h3>Parc national des Calanques</h3>
                 </a>
                 <a href="#">
                     <img src="Images/activites/florian-wehde.jpg" alt="">

@@ -8,13 +8,13 @@ h3{
     font-family: Raleway;
 }
 body {
-    background-color: #fafafa;
+    background-color: white;
     margin: 0 auto;
     max-width: 1440px;
     padding: 0 20px 0 20px;
 }
 section{
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 h1{
     font-size: 1.5rem;
@@ -50,43 +50,71 @@ ul{
     max-width: 4rem;
 }
 .head>ul>li{
-    padding-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.head>ul>li:hover{
+    border-top: solid 2px #0065fc;
+    color: #0065FC;
 }
 .head>ul>li>a:hover{
-    border-top: solid 3px #0065fc;
     color: #0065FC;
-    padding-top: 13px;
 }
 .search{
     display: flex;
 }
-.search > div > h3, .search > h3{
-    padding: 15px 20px 15px 20px;
+::placeholder{
+    color: black;
+    font-weight: bold;
+    font-size: 1.06rem;
 }
-.search-icon{
-    background-color: #d9d9d9;
+form{
+    display: flex;
+}
+input{
+    border: none ;
+    padding: 15px;
+    border: solid 1px #f2f2f2;
+}
+
+.location{
+    padding: 15px 20px;
+    border: #f2f2f2;
     border-radius: 15px 0 0 15px;
+    font-size: 1.06rem;
 }
-.search-always{
-    display: inline-flex;
-    border: solid 1px #d9d9d9;
-    border-radius: 15px 0 0 15px;
-}
-.blue{
+.submit{
     background-color: #0065FC;
+    color: white;
+    font-size: 1.06rem;
+    font-weight: bold;
     border-radius: 0 15px 15px 0;
-    color: #f2f2f2;
+    padding: 15px;
+    border: #0065FC;
+}
+.fa-magnifying-glass{
+    color: white;
 }
 .mobile{
     display: none;
-    color: #d9d9d9
+    border-radius: 15px;
+    padding: 0 8px;
+}
+
+.fa-info{
+    color: #0065FC;
+    border: solid 1px #d9d9d9;
+    border-radius: 50%;
+    padding: 5px 9px;
+    margin-right: 5px;
+    font-size: 0.8rem;
 }
 
 .hotel{
     display: flex;
     justify-content: space-around;
     flex: 1 0;
-    gap: 40px;
+    gap: 20px;
 }
 .heb{
     display: flex;
@@ -96,11 +124,12 @@ ul{
     gap: 30px;
 }
 .heb-a > a{
-    background-color: #f2f2f2;
+    background-color: white;
     border-radius: 25px;
     display: flex;
-    padding: 3px;
+    padding: 5px;
     flex-direction: column;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.096);
 
 }
 .heb-a > a > div > h3{
@@ -111,7 +140,7 @@ ul{
     position: relative;
 }
 .heb-a{
-    width: 30%;
+    width: 28%;
 
 }
 .heb-h{
@@ -125,7 +154,7 @@ ul{
 }
 .hebcontent{
     border-radius: 20px;
-    background-color: #d9d9d9;
+    background-color: #f2f2f2;
     padding: 20px;
 }
 .btn{
@@ -133,6 +162,7 @@ ul{
     gap: 1rem;
     font-weight: bold;
     align-items: center;
+    padding-bottom: 25px
 }
 .btn > div{
     display: flex;
@@ -141,7 +171,6 @@ ul{
 .filter{
     border: 1px solid #d9d9d9;
     border-radius: 25px;
-    background-color: #fafafa;
     display: flex;
     gap: 10px;
     padding: 15px;
@@ -157,6 +186,14 @@ ul{
 }
 .heb-pop{
     flex: 1;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-chart-line{
+    color: #0065FC;
 }
 .pop > a{
     flex-direction: row;
@@ -197,7 +234,7 @@ ul{
     color: #0065FC;
 }
 .blank{
-    color: #d9d9d9;
+    color: #f2f2f2;
 }
 .star{
     position: absolute;
@@ -206,32 +243,46 @@ ul{
 footer{
     display: flex;
     gap: 250px;
-    background-color: #d9d9d9;
+    background-color: #f2f2f2;
     padding: 25px;
 }
 @media screen and (max-width: 1024px) {
     .hotel{ 
         flex-direction: column;
+        gap: 50px;
     }
     footer {
         gap: 150px;
     }
     .acti > a > img {
-        height: 10rem;
+        height: 13rem;
     }
     .pop {
         flex-direction: column;
         width: 30%;
+        height: 100%;
+    }
+    .btn{
+        display: block;
+    }
+    .btn >h3{
+        padding-bottom: 15px;
     }
 }
 @media screen and (max-width: 768px) {
     body{
         padding: 0;
     }
+    .logo{
+        padding-bottom: 15px;
+    }
     .head{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .mobile-space{
+        padding: 0 10px;
     }
     .btn{
         flex-direction: column;
@@ -256,10 +307,29 @@ footer{
         width: 100%;
         height: 100%;
     }
+    .hebcontent{
+        border-radius: 0;
+    }
+    .heb-heb{
+        background-color: white;
+    }
     .heb-a {
         width: 100%;
     }
-    .blue{
+    input{
+        border: none;
+    }
+    form{
+        justify-content: center;
+        padding: 0;
+        border: solid 1px #f2f2f2;
+        border-radius: 16px;
+    }
+    .mobile100{
+        width: 100%;
+        border-right: none;
+    }
+    .submit{
         display: none;
     }
     .mobile{
@@ -271,7 +341,7 @@ footer{
     .search{
         justify-content: center;
     }
-    .head>ul>li>a:hover{
+    .head>ul>li:hover{
         border-top: none;
     }
     .head>ul {
@@ -283,12 +353,11 @@ footer{
         width: 100%;
         text-align: center;
         padding-bottom: 10px;
+        justify-content: center;
+        border-bottom: solid 2px #f2f2f2;
     }
     .head>ul>li:hover{
         border-bottom: solid 2px #0065FC;
-    }
-    section{
-        padding: 0 5px 0 5px;
     }
     .btn{
         display: block;
@@ -303,8 +372,11 @@ footer{
         line-height: normal;
     }
     .btn> div{
-        justify-content: center;
+        justify-content: space-around;
         width: 100%;
+        gap: 0;
+        row-gap: 1rem;
+        
     }
     .txt{
         width: 100%;
