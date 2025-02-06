@@ -50,6 +50,7 @@ ul{
     max-width: 4rem;
 }
 .head>ul>li{
+    border-top: solid 2px white;
     display: flex;
     align-items: center;
 }
