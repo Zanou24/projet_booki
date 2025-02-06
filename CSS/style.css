@@ -137,11 +137,13 @@ input{
     line-height: normal;
 }
 .heb-a >a >div{
-    padding: 10px;
     position: relative;
 }
+.heber{
+    padding: 10px;
+}
 .heb-a{
-    width: 28%;
+    width: 30%;
 
 }
 .heb-h{
@@ -160,7 +162,7 @@ input{
 }
 .btn{
     display: flex;
-    gap: 1rem;
+    gap: 16px;
     font-weight: bold;
     align-items: center;
     padding-bottom: 25px
@@ -199,13 +201,21 @@ input{
 .pop > a{
     flex-direction: row;
     height: 10rem;
+    width: 100%;
 }
 .pop{
     width: 100%;
 
 }
+.pop-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .ipop{
     width: 30%;
+    min-width: 80px;
     height: 100%;
     border-radius: 20px 0 0 20px;
     margin-right: 10px;
@@ -238,8 +248,7 @@ input{
     color: #f2f2f2;
 }
 .star{
-    position: absolute;
-    bottom: 10px; 
+    bottom: 5px; 
 }
 footer{
     display: flex;
@@ -261,7 +270,9 @@ footer{
     .pop {
         flex-direction: column;
         width: 30%;
-        height: 100%;
+    }
+    .pop-content>h3{
+        font-size: 1rem;
     }
     .btn{
         display: block;
@@ -269,6 +280,7 @@ footer{
     .btn >h3{
         padding-bottom: 15px;
     }
+    
 }
 @media screen and (max-width: 768px) {
     body{
