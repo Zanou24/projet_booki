@@ -338,9 +338,6 @@ footer{
     .btn > div{
         flex-wrap: wrap;
     }
-    .search{
-        justify-content: center;
-    }
     .head>ul>li:hover{
         border-top: none;
     }
